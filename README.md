@@ -1,14 +1,60 @@
 # flutter_speedometer
 
-A new Flutter package.
+[Flutter](https://flutter.io) Speedometer widget package
 
-## Getting Started
+![](flutter_speedometer_1.png)
 
-This project is a starting point for a Dart
-[package](https://flutter.io/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+### Getting Started
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+In order to use this package, do import
+```dart
+import 'package:flutter_speedometer/flutter_speedometer.dart';
+```
+
+Basic implementation can be done like below code:
+```dart
+import 'package:flutter/material.dart';
+import 'package:flutter_speedometer/flutter_speedometer.dart';
+
+void main() {
+  runApp(
+    Center(
+      child: Speedometer(
+        size: 250,
+        currentValue: 76,
+        minValue: 0,
+        maxValue: 180,
+        displayText: 'mph',
+      ),
+    ),
+  );
+}
+```
+
+### Example App
+You can find more examples from [Example App](example)
+
+
+### API
+In this table, you can find all attributes provided by this package:
+
+| Attribute           | Default value                     | Description |
+| ------------------- | --------------------------------- | ----------- |
+| currentValue        | 0                                 | Set the current value |
+| minValue            | 0                                 | Min value to be displayed |
+| maxValue            | 100                               | Max value to be displayed |
+
+### Objects
+```dart
+class Speedometer {
+
+  final int currentValue;
+  final int minValue;
+  final int maxValue;
+}
+ ```
+
+
+### Feedback
+
+Feel free to [leave any feedback](https://github.com/ltdangkhoa/Flutter-Speedometer/issues) for helping support this package 🍻 

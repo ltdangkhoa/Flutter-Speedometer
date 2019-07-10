@@ -5,18 +5,20 @@ void main() {
   runApp(
     Center(
       child: Speedometer(
-        currentValue: 10,
+        size: 250,
+        currentValue: 76,
+        minValue: 0,
+        maxValue: 180,
         backgroundColor: Colors.black,
-        displayText: 'km/h',
-        displayTextColor: Colors.white,
+        meterColor: Colors.blueAccent,
+        kimColor: Colors.tealAccent,
+        displayNumericStyle: TextStyle(
+            fontFamily: 'Digital-Display',
+            color: Colors.white,
+            fontSize: 250 * 0.25),
+        displayText: 'mph',
+        displayTextStyle: TextStyle(color: Colors.white, fontSize: 250 * 0.075),
       ),
-//      child: Directionality(
-//        textDirection: TextDirection.ltr,
-//        child: Text(
-//          '123',
-//          style: TextStyle(fontFamily: 'Digital-Display', fontSize: 80),
-//        ),
-//      ),
     ),
   );
 }
