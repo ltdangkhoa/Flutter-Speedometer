@@ -1,8 +1,8 @@
 name: flutter_speedometer
-description: A new Flutter package.
+description: Flutter Speedometer widget package
 version: 0.0.1
-author:
-homepage:
+author: Kris Luu <luuthaidangkhoa@gmail.com>
+homepage: https://github.com/ltdangkhoa/Flutter-Speedometer
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

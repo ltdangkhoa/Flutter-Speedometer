@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1db2183f-b56b-4c15-add0-2e533bd0aae4" name="Default Changelist" comment="" />
+    <list default="true" id="1db2183f-b56b-4c15-add0-2e533bd0aae4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
     <ignored path="$PROJECT_DIR$/.pub/" />
@@ -25,10 +28,11 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="LICENSE" value="1" />
           <entry key="bk" value="1" />
           <entry key="dart" value="18" />
           <entry key="iml" value="1" />
-          <entry key="md" value="4" />
+          <entry key="md" value="5" />
           <entry key="ttf" value="1" />
           <entry key="url" value="2" />
           <entry key="yaml" value="5" />
@@ -39,66 +43,29 @@
           <entry key="Dart" value="18" />
           <entry key="Font" value="1" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="Markdown" value="4" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Markdown" value="5" />
+          <entry key="PLAIN_TEXT" value="4" />
           <entry key="YAML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dart" value="2081" />
-          <entry key="md" value="264" />
+          <entry key="md" value="268" />
           <entry key="yaml" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Dart" value="2081" />
-          <entry key="Markdown" value="264" />
+          <entry key="Markdown" value="268" />
           <entry key="YAML" value="29" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="23" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/flutter_speedometer.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2358">
-              <caret line="131" column="45" selection-start-line="131" selection-start-column="45" selection-end-line="131" selection-end-column="45" />
-              <folding>
-                <element signature="e#30#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -112,6 +79,8 @@
         <option value="$PROJECT_DIR$/lib/flutter_speedometer.dart" />
         <option value="$PROJECT_DIR$/example/lib/main.dart" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/LICENSE" />
+        <option value="$PROJECT_DIR$/CHANGELOG.md" />
       </list>
     </option>
   </component>
@@ -287,12 +256,12 @@
     <entry file="file://$PROJECT_DIR$/flutter_speedometer.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
+    <entry file="file://$PROJECT_DIR$/lib/flutter_speedometer.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="23" selection-end-column="1" />
+        <state relative-caret-position="2358">
+          <caret line="131" column="45" selection-start-line="131" selection-start-column="45" selection-end-line="131" selection-end-column="45" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#30#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -307,13 +276,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/flutter_speedometer.dart">
+    <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2358">
-          <caret line="131" column="45" selection-start-line="131" selection-start-column="45" selection-end-line="131" selection-end-column="45" />
+        <state>
+          <caret selection-end-line="23" selection-end-column="1" />
           <folding>
-            <element signature="e#30#49#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="39" lean-forward="true" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
         </state>
       </provider>
     </entry>
