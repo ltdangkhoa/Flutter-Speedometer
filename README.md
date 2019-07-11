@@ -2,7 +2,7 @@
 
 [Flutter](https://flutter.io) Speedometer widget package
 
-![](flutter_speedometer_1.png)
+![](flutter_speedometer_2.png)
 
 ### Getting Started
 
@@ -21,9 +21,10 @@ void main() {
     Center(
       child: Speedometer(
         size: 250,
-        currentValue: 76,
         minValue: 0,
         maxValue: 180,
+        currentValue: 76,
+        warningValue: 150,
         displayText: 'mph',
       ),
     ),
@@ -40,17 +41,28 @@ In this table, you can find all attributes provided by this package:
 
 | Attribute           | Default value                     | Description |
 | ------------------- | --------------------------------- | ----------- |
-| currentValue        | 0                                 | Set the current value |
-| minValue            | 0                                 | Min value to be displayed |
-| maxValue            | 100                               | Max value to be displayed |
+| size                | 200                               | Min value to be displayed   |
+| minValue            | 0                                 | Min value to be displayed   |
+| maxValue            | 100                               | Max value to be displayed   |
+| currentValue        | 0                                 | Set the current value       |
+| warningValue        | 80                                | Set the current value       |
 
 ### Objects
 ```dart
 class Speedometer {
 
-  final int currentValue;
-  final int minValue;
-  final int maxValue;
+    final double size;
+    final int minValue;
+    final int maxValue;
+    final int currentValue;
+    final int warningValue;
+    final Color backgroundColor;
+    final Color meterColor;
+    final Color warningColor;
+    final Color kimColor;
+    final TextStyle displayNumericStyle;
+    final String displayText;
+    final TextStyle displayTextStyle;
 }
  ```
 
