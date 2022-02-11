@@ -13,16 +13,16 @@ class ArcPainter extends CustomPainter {
         size.width * 0.95, size.height * 0.95);
     final startAngle = math.pi / 12 * this.startAngle;
     final sweepAngle = math.pi / 12 * this.sweepAngle;
-    final useCenter = false;
+    const useCenter = false;
     final paint = Paint()
-      ..color = this.color
+      ..color = color
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.1;
     canvas.drawArc(rect, startAngle, sweepAngle, useCenter, paint);
   }
 
   @override
-  bool shouldRepaint(CustomPainter old) {
+  bool shouldRepaint(CustomPainter oldDelegate) {
     return false;
   }
 }
