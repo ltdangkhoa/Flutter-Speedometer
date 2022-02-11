@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'src/painter.dart';
 
 class Speedometer extends StatefulWidget {
-  Speedometer(
-      {Key key,
+  const Speedometer(
+      {Key? key,
       this.size = 200,
       this.minValue = 0,
       this.maxValue = 100,
@@ -18,7 +18,8 @@ class Speedometer extends StatefulWidget {
       this.kimColor = Colors.white,
       this.displayNumericStyle,
       this.displayText = '',
-      this.displayTextStyle})
+      this.displayTextStyle
+      })
       : super(key: key);
   final double size;
   final int minValue;
@@ -29,9 +30,9 @@ class Speedometer extends StatefulWidget {
   final Color meterColor;
   final Color warningColor;
   final Color kimColor;
-  final TextStyle displayNumericStyle;
+  final TextStyle? displayNumericStyle;
   final String displayText;
-  final TextStyle displayTextStyle;
+  final TextStyle? displayTextStyle;
   @override
   _SpeedometerState createState() => _SpeedometerState();
 }
@@ -39,13 +40,13 @@ class Speedometer extends StatefulWidget {
 class _SpeedometerState extends State<Speedometer> {
   @override
   Widget build(BuildContext context) {
-    double _size = widget.size;
-    int _minValue = widget.minValue;
-    int _maxValue = widget.maxValue;
-    int _currentValue = widget.currentValue;
-    int _warningValue = widget.warningValue;
-    double startAngle = 3.0;
-    double endAngle = 21.0;
+    final double _size = widget.size;
+    final int _minValue = widget.minValue;
+    final int _maxValue = widget.maxValue;
+    final int _currentValue = widget.currentValue;
+    final int _warningValue = widget.warningValue;
+    const  double startAngle = 3.0;
+    const  double endAngle = 21.0;
 
     double _kimAngle = 0;
     if (_minValue <= _currentValue && _currentValue <= _maxValue) {
@@ -58,8 +59,8 @@ class _SpeedometerState extends State<Speedometer> {
       _kimAngle = endAngle;
     }
 
-    double startAngle2 = 0.0;
-    double endAngle2 = 18.0;
+    const double startAngle2 = 0.0;
+    const double endAngle2 = 18.0;
     double _warningAngle = endAngle2;
     if (_minValue <= _warningValue && _warningValue <= _maxValue) {
       _warningAngle =
@@ -87,10 +88,10 @@ class _SpeedometerState extends State<Speedometer> {
                         alignment: Alignment.center,
                         width: _size,
                         height: _size,
-                        decoration: new BoxDecoration(
+                        decoration: BoxDecoration(
                           color: widget.backgroundColor,
                           boxShadow: [
-                            new BoxShadow(
+                            BoxShadow(
                                 color: widget.kimColor,
                                 blurRadius: 8.0,
                                 spreadRadius: 4.0)
@@ -132,10 +133,10 @@ class _SpeedometerState extends State<Speedometer> {
                     width: _size * 0.1,
                     height: _size * 0.1,
                     alignment: Alignment.center,
-                    decoration: new BoxDecoration(
+                    decoration: BoxDecoration(
                       color: widget.kimColor,
                       boxShadow: [
-                        new BoxShadow(
+                        BoxShadow(
                             color: widget.meterColor,
                             blurRadius: 10.0,
                             spreadRadius: 5.0)
@@ -161,7 +162,7 @@ class _SpeedometerState extends State<Speedometer> {
                 Container(
                   alignment: Alignment.bottomCenter,
                   child: Padding(
-                    padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                    padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
                     child: Text(
                       widget.displayText,
                       style: widget.displayTextStyle,

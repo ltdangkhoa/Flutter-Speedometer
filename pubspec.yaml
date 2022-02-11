@@ -1,17 +1,17 @@
 name: flutter_speedometer
 description: Simple widget that let Flutter Devs can easily integrate speedometer to their apps with customizable options
 version: 1.0.2
-author: Kris Luu <luuthaidangkhoa@gmail.com>
 homepage: https://github.com/ltdangkhoa/Flutter-Speedometer
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.16.1 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
 dev_dependencies:
+  flutter_lints: ^1.0.0
   flutter_test:
     sdk: flutter
 
